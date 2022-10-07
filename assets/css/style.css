@@ -640,6 +640,11 @@ max-width: 700px;
   aspect-ratio: 1 / 1;
 }
 
+.card-banner img {
+  height: 300px;
+  width: 300px;
+}
+
 .promo-item {
   min-width: 100%;
   scroll-snap-align: start;
@@ -1159,7 +1164,7 @@ max-width: 700px;
   #FOOTER
 \*-----------------------------------*/
 
-.footer { overflow: hidden; }
+.footer { overflow: hidden;}
 
 .footer-top {
   position: relative;
@@ -1885,4 +1890,72 @@ coustmize
 .fa-align
 {
   text-align: start;
+}
+
+/* language toggle button */
+
+#lang-toggle {
+	width: 160px;
+	height: 36px;
+	margin: 0;
+	position: relative;
+	border-radius: 6px;
+	overflow: hidden;
+	user-select: none;
+	cursor: pointer;
+}
+
+.inner-container {
+	position: absolute;
+	left: 0;
+	top: 0;
+	width: inherit;
+	height: inherit;
+	text-transform: uppercase;
+	font-size: .6em;
+	letter-spacing: .2em;
+}
+
+.inner-container:first-child {
+	background: #e9e9e9;
+	color: #a9a9a9;
+}
+
+.inner-container:nth-child(2) {
+	background: #ff8d29;
+	color: white;
+	clip-path: inset(0 50% 0 0);
+	transition: .3s cubic-bezier(0,0,0,1);
+}
+
+.toggle {
+	width: 50%;
+	position: absolute;
+	height: inherit;
+	display: flex;
+	box-sizing: border-box;
+}
+
+.toggle p {
+	margin: auto;
+}
+
+.toggle:nth-child(1) {
+	right: 0;
+}
+
+/* silder */
+
+.slider-wrapper{
+  width: 100%;
+  height: 100%;
+  margin: auto;
+  box-shadow: 1px 1px 6px #444;
+  position: relative;
+}
+.slider-wrapper img{
+  width: 100%;
+  height: 100%;
+  display: block;
+  position: absolute;
 }

@@ -1,0 +1,11 @@
+kind: ExternalService
+name: info
+spec:
+  image_pull_policy: Always
+  port: 80
+  source:
+    context: .
+    project_type: static_website
+  domains:
+    - name : mesco-iran.com
+    - name : www.mesco-iran.com
